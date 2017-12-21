@@ -1,1 +1,90 @@
-miki
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sparse, smart contours</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container"><span class="title">Sparse, Smart Contours to Represent and Edit Images</span>
+  <table border="0" align="center" class="authors">
+    <tr align="center">
+      <td><a href="http://people.csail.mit.edu/talidekel/">Tali Dekel</a></td>
+      <td>Chuang Gan</td>
+      <td><a href="https://dilipkay.wordpress.com/" class="author">Dilip Krishnan</a></td>
+      <td><a href="http://people.csail.mit.edu/celiu/" class="author">Ce Liu</a><sup></sup></td>
+      <td><p><a href="https://billf.mit.edu/">William T. Freeman</a></p></td>
+    </tr>
+  </table>
+  <table border="0" align="center" class="affiliations">
+    <tr>
+      <td align="center"><img src="images/logo_research.png" height="50" alt=""/></td>
+      <td align="center"><a href="https://research.google.com/">Google Research</a></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width="200" border="0" align="center">
+    <tr>
+      <td><img src="images/teaser.png" width="800" alt=""/><br /></td>
+    </tr>
+    <tr>
+      <td class="caption">Our method produces high quality reconstructions of images from input representations in the form of values at sparse contour locations: a source (512x512) image in (a) is reconstructed in (c) from gradient information stored at the set of colored contours in (b). Less than 5% of pixels are non-zero. The model synthesizes hair texture, facial lines and shading even in regions where no input information is provided. Our model allows for semantically intuitive editing in the contour domain. Top-right: a caricature-like result (e) is created by moving and scaling some contours in (d). Bottom-right: hairs are synthesized by pasting a set of hair contours copied from a reference image. Edited contours are marked in green while the original contours in red.</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <span class="section">Abstract</span>
+  <p>We study the problem of reconstructing an image from information stored at sparse contour locations. Existing contour-based image reconstruction methods struggle to balance contour sparsity and reconstruction fidelity. Therefore, denser contours are needed to capture subtle texture information even though contours were not meant for textures. We propose a novel image representation where image content is characterized by contours with gradient information via an encoder-decoder network, while image details are modeled by a conditional generative adversarial network. We show that high-quality reconstructions with high fidelity to the source image can be obtained from extremely sparse input, e.g., comprising less than 6% of image pixels. Our model synthesizes texture, details and fine structures in regions where no input information is provided. The semantic knowledge encoded into our model and the sparsity of the input allows using contours as an intuitive interface for semantically-aware image manipulation: local edits in contour domain such as scaling, translation and erasing, translate to long-range and coherent changes in the pixel space. Experiments on a variety of datasets verify the versatility and convenience afforded by our models.<br />
+  </p>
+  <p class="section">&nbsp;</p>
+  <table width="200" border="0" align="center">
+    <tbody>
+      <tr>
+        <td><iframe aligh="center" width="728" height="409" src="https://www.youtube.com/embed/a_HWUafkJao" frameborder="0" allowfullscreen></iframe></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <p class="section">Paper</p>
+  <table border="0">
+    <tbody>
+      <tr>
+        <td><a href="contour2im_arxiv.pdf"><img src="images/paper.png" width="200" alt=""/></a></td>
+        <td>&nbsp;</td>
+        <td><p>&quot;Sparse, Smart Contours to Represent and Edit Images&quot;,<br />
+          Tali Dekel,  Chuang Gan, Dilip Krishnan, Ce Liu and William T. Freeman,<br />
+          Submitted to Conference on Computer Vision and Pattern Recongnition (CVPR), 2018</p>
+        <p>[<a href="contour2im_arxiv.pdf">PDF</a>] [<a href="supplemental/doc/contour2im_supp_doc.pdf">Supplementary Doc.</a>]</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>&nbsp;</p>
+  <p class="section">Supplementary Material</p>
+  <table width="665" border="0">
+    <tbody>
+      <tr>
+        <td><a href="supplemental/index.html"><img src="supplemental/sampled_images/vgg255.jpg" width="250" alt=""/></a></td>
+        <td>&nbsp;</td>
+        <td><p>Additional reconstruction results and comparison to pix2pix</p>
+        <p>[<a href="supplemental/index.html">Link</a>]</p></td>
+      </tr>
+    </tbody>
+  </table><table width="359" border="0">  </table>
+  <p class="section">&nbsp;</p>
+  <p class="section">&nbsp;</p>
+  <p class="section">Acknowledgments</p>
+  <table width="359" border="0">
+    <tbody>
+      <tr>
+        <td height="27"><p>We thank<a href="http://people.csail.mit.edu/fcole/"> Forrester Cole </a>for the video narration. </p></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="section">&nbsp;</p>
+  <p class="section">&nbsp;</p>
+  <p class="section">&nbsp;</p>
+  <p class="section">&nbsp;</p>
+  <p align="center" class="date">Last updated: Aug 2017</p>
+</div>
+</body>
+</html>
